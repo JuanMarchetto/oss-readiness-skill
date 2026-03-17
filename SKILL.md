@@ -119,6 +119,6 @@ The synthesizer uses weighted scoring reflecting real-world open-source risk:
 | 5.0 - 7.9 | **CONDITIONAL GO** | Publishable after fixing blockers. No showstoppers. |
 | 0.0 - 4.9 | **NOT READY** | Significant work required. Phased plan provided. |
 
-## Bilingual
+## Language
 
-All agents respond in the same language you write in. Detected automatically.
+All agents respond in the same language the user writes in. Detected automatically — no configuration needed.
