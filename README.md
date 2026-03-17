@@ -44,25 +44,21 @@ BLOCKERS (fix before publishing):
 
 ## Install
 
-### Method 1: Claude Code Plugin (recommended)
-
-```bash
-claude plugin add --git https://github.com/JuanMarchetto/oss-readiness-skill
+```
+/plugin marketplace add JuanMarchetto/agent-skills
+/plugin install oss-readiness@agent-skills
 ```
 
-### Method 2: npx
-
+Or via [skills.sh](https://skills.sh):
 ```bash
-npx @anthropic/claude-code-plugins add https://github.com/JuanMarchetto/oss-readiness-skill
+npx skills add JuanMarchetto/oss-readiness-skill
 ```
 
-### Method 3: Manual
-
+Or manually:
 ```bash
-git clone https://github.com/JuanMarchetto/oss-readiness-skill ~/.claude/plugins/oss-readiness-skill
+git clone https://github.com/JuanMarchetto/oss-readiness-skill.git
+cp -r oss-readiness-skill ~/.claude/skills/oss-readiness
 ```
-
-Then add to your Claude Code configuration.
 
 ## Usage
 
@@ -114,7 +110,7 @@ oss-readiness-skill/
 │   ├── api-surface-analyzer.md       # API stability, semver, breaking changes
 │   └── synthesizer.md               # Combines all 5 into unified assessment
 ├── references/
-│   └── oss-checklist.md              # 68-item checklist by category and severity
+│   └── oss-checklist.md              # 78-item checklist by category and severity
 ├── .claude-plugin/plugin.json
 ├── README.md
 ├── LICENSE
@@ -123,7 +119,7 @@ oss-readiness-skill/
 
 ## Comprehensive Checklist
 
-The `references/oss-checklist.md` contains a 68-item checklist organized by:
+The `references/oss-checklist.md` contains a 78-item checklist organized by:
 
 - **Category**: Licensing (13), Documentation (22), Security (18), Community (13), API Surface (12)
 - **Severity**: BLOCKER (12), HIGH (22), MEDIUM (21), LOW (13)
